@@ -5,31 +5,47 @@ import java.util.Scanner;
  */
 public class Par {
    public static void main(String args[]) {
-       int qtdPartidas = 1;
+       int qtdPartidas = 0;
        String nomeJogador1;
        String nomeJogador2;
        int maoJogador1;
        int maoJogador2;
-       int n = 1;
+       int teste = 1;
+       String array[] = new String[1000];
+       int aux = 0;
 
        Scanner sc = new Scanner(System.in);
 
-       while (n != 0) {
+       while (teste != 0) {
+               System.out.println("Quantidade de Partidas:");
                qtdPartidas = sc.nextInt();
-               nomeJogador1 = sc.next();
-               nomeJogador2 = sc.next();
-           for (int i = 1; i <= qtdPartidas; i++) {
-               {
-                   System.out.println("Mão Jogador1:");
-                   maoJogador1 = sc.nextInt();
-                   System.out.println("Mão Jogador2:");
-                   maoJogador2 = sc.nextInt();
-               }
-
+           if (qtdPartidas == 0){
+               break;
            }
-           System.out.println("sair?");
-           n = sc.nextInt();
+               aux += qtdPartidas;
+
+               System.out.println("Nome do Jogador1:");
+               nomeJogador1 = sc.next();
+               System.out.println("Nome do Jogador2:");
+               nomeJogador2 = sc.next();
+           for (int i = 0; i < qtdPartidas; i++) {
+               {
+                   System.out.println("Mão do Jogador1:");
+                   maoJogador1 = sc.nextInt();
+                   System.out.println("Mão do Jogador2:");
+                   maoJogador2 = sc.nextInt();
+
+                   if ((maoJogador1 + maoJogador2)% 2 == 0){
+                        array[i] = nomeJogador1;
+                   } else {
+                        array[i] = nomeJogador2;
+                   }
+               }
+           }
+       }
+
+       for (int i = 0; i < aux; i++){
+               System.out.println(array[i]);
            }
        }
    }
-
