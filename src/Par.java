@@ -12,6 +12,7 @@ public class Par {
         int maoJogador2;
         int teste = 1;
         String array[] = new String[1000];
+        String jogadores[] = new String[2];
         int aux = 0;
         int cont = 0;
 
@@ -27,8 +28,14 @@ public class Par {
 
             System.out.println("Nome do Jogador1:");
             nomeJogador1 = sc.next();
+            if((nomeJogador1.length()) < 1 && (nomeJogador1.length()) > 10) {
+                break;
+            }
             System.out.println("Nome do Jogador2:");
             nomeJogador2 = sc.next();
+            if((nomeJogador2.length()) < 1 && (nomeJogador2.length()) > 10) {
+                break;
+            }
             for (int i = 0; i < qtdPartidas; i++) {
 
                 System.out.println("Mão do Jogador1:");
@@ -36,12 +43,14 @@ public class Par {
                 System.out.println("Mão do Jogador2:");
                 maoJogador2 = sc.nextInt();
 
+                array[cont] = "Teste " + teste;
                 if ((maoJogador1 + maoJogador2) % 2 == 0) {
                     array[cont] = (nomeJogador1);
                 } else {
                     array[cont] = nomeJogador2;
                 }
                 cont+=1;
+                teste++;
             }
         }
 
