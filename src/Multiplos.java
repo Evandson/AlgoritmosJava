@@ -1,5 +1,5 @@
 /**
- * Created by usuario on 11/04/2016.
+ * Created by Evandson Maranhão on 11/04/2016.
  */
 public class Multiplos {
     public static void main(String args[]){

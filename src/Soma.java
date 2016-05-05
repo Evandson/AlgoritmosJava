@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /**
- * Created by usuario on 14/04/2016.
+ * Created by Evandson Maranhão on 14/04/2016.
  */
 public class Soma {
     public static void main(String args[]){
