@@ -1,6 +1,6 @@
 # AlgoritmosJava
 Algorithms Java - Resolutions exercises
 
-Resoluções de Atividades da Graduação. 
+Resoluções de trabalhos e atividades da Graduação. 
 TADS IFRN.
 
