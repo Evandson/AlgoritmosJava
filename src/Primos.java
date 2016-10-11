@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 /**
  * Created by Evandson Maranhão on 11/04/2016.
+ * Teste
  */
 public class Primos {
     public static void main(String args[]) {
